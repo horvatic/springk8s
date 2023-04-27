@@ -12,12 +12,12 @@ public class SpringK8sApplication {
     public static void main(String[] args) {
       SpringApplication.run(SpringK8sApplication.class, args);
     }
-    @GetMapping("/hello")
+    @GetMapping("/springk8s/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
       return String.format("Hello %s!", name);
     }
 
-    @GetMapping("/health")
+    @GetMapping("/springk8s/health")
     public String health() {
       return String.format("OK");
     }
