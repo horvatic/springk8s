@@ -8,6 +8,12 @@ group = 'com.github.horvatic'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
+jar {
+  manifest {
+   attributes 'Main-Class': 'com.github.horvatic.springk8s.SpringK8sApplication'
+  }
+}
+
 repositories {
 	mavenCentral()
 }
